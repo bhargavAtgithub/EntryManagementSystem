@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="visitor-header"><h3 class="header-text">Visitor Entry Details</h3 class="header-text"></div>
+
+<div class="visitor_form">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-div">
+            <div class="form_content">
+                <label for="id_host">Host : </label>
+            </div>
+            <div class="form-content input">
+            {{ form.host }}
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form_content">
+                <label for="id_name">Name:</label>
+            </div>
+            <div class="form-content input">
+                {{ form.name }}
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form_content">
+                <label for="id_email">Email:</label>
+            </div>
+            <div class="form-content input">
+                {{ form.email }}
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form_content">
+                <label for="id_phone">Phone : </label>
+            </div>
+            <div class="form-content input">
+                {{ form.phone }}
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form_content">
+                <label for="id_check_in_time">Check in time : </label>
+                <span style="font-size: small;">(HH:MM)</span>
+            </div>
+            <div class="form-content input">
+                {{ form.check_in_time }}
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form_content">
+                <label for="id_check_out_time">Check out time : </label>
+                <span style="font-size: small;">(HH:MM)</span>
+            </div>
+            <div class="form-content input">
+                {{ form.check_out_time }}
+            </div>
+        </div>
+        <div class="form-button-div">
+            <button type="submit" class="form-button">submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+{% block url-1 %}
+
+<div class="base-host-div">
+    <a href="{% url 'Accounts:visitor_login' %}" class="host-visitor"><button class="button">Visitor Accounts</button></a href="#">
+</div>
+{% endblock %}
+
+{% block url-2 %}
+<div class="footer">
+    <a href="{% url 'app:about_view' %}" class="about"><button class="button">About</button></a href="#">
+</div>
+{% endblock %}
+<!--'name','email','phone','check_in_time','check_out_time','host'-->

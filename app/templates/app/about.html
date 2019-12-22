@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="about-header"><h3 class="header-text">About</h3></div>
+
+<div class="about-content">
+    <div class="developer-info">
+        <p style="font-size: large; color: #fc7ea2 ;"><b>Entry Management System</b><br>
+         developed by -<b> Bhargav </b>.</p><p> The reason to code 
+            this project is to avail the internship 
+            opportunity at innovaccer, one of the fastest growing start-ups in India.
+        </p>
+    </div>
+    <div class="EMS-info">
+        <p style="font-size: large; color: #fc7ea2 ;">Idea of EMS</p>
+        <p>This project works as the name suggests. It is used to save
+            the entries of visitors who want to visit few hosts.
+        </p>
+    </div>
+    <div class="tech-info">
+        <p style="font-size: large; color: #fc7ea2 ;">Stack</p>
+        <p><b>Django</b></p>
+        <p><b>HTML</b> and <b>CSS</b></p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block url-1 %}
+
+<div class="base-visitor-div">
+    <a href="{% url 'app:visitor_entry' %}" class="base-visitor"><button class="button">Entry Form</button></a href="#">
+</div>
+{% endblock %}  
+
+{% block url-2 %}
+<div class="footer">
+    <a href="{% url 'Accounts:visitor_login' %}" class="host"><button class="button">Log-in</button></a href="#">
+</div>
+{% endblock %}

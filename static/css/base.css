@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700&display=swap');
+body{
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.icon{
+    font-family: 'Montserrat', sans-serif;  
+    margin-left: 15px;
+    position: absolute;
+    border-left: 5px solid  #fc7ea2  ;
+}
+
+.icon-header-1, .icon-header-2, .icon-header-3{
+    margin: 0px;
+    margin-left: 10px;
+    color:   #fc7ea2 ;   
+}
+
+.base{
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px 40px 0px;
+    width: 35vw;
+    height: 85vh;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    overflow-y: scroll;
+}
+
+.footer{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.button{
+    background-color: white;
+    border: 3px solid #fc7ea2 ;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;  
+    padding: 5px 10px;
+    font-size: 15px;
+    width: 100px;
+}
+
+.form-div{
+    display: grid;    
+    grid-template-columns: 40% 60%;
+}
+
+.form_content {
+    font-family: 'Montserrat', sans-serif;  
+    margin: 20px 20px ;
+    text-align: center ;
+}
+
+.input{
+    margin: auto;
+}
+
+div>input,select{
+    border: 2px solid black;
+    outline: none;
+    height: 25px;
+    background-color: white;
+    width: 100%;    
+}
+
+select {
+    width: 100px;;
+}
+
+.form-button-div{
+    margin-left: 45%;
+    margin-top: 20px;
+}
+
+.form-button{
+    background-color: white;
+    border: 3px solid black ;
+    color: black;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;  
+    padding: 5px 10px;
+    font-size: 15px;
+}
+
+.host-header, .visitor-header, .about-header{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.base-host-div, .base-visitor-div{
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+.about-content{
+    font-family: 'Quicksand', sans-serif;
+    padding: 0px 40px;
+    text-align: center;
+}
+
+span{
+    font-family: 'Quicksand', sans-serif;
+}

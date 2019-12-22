@@ -1,0 +1,14 @@
+Important-Notes: 
+Replace the credentials after completion of the project. 
+Documentation of the project is needed.
+    - Which inludes :
+        1. The working of the application
+        2. Work flow of django
+        3. Phase-I 
+        4. Phase-II
+        5. Setting up of the application
+
+
+Re-visit the Saved bookmarks
+Work on scheduling the mail
+Change personal credentials
