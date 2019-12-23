@@ -10,13 +10,13 @@ def send_email(subject, body, to, sleep_time):
     server.ehlo()
     server.starttls()
     server.ehlo()
-
-    server.login('bhargav999reddy@gmail.com','dddessvocdaykvvi')
+    #Replace the ** with email and password to send the mail.
+    server.login('*********','**********')
 
     msg = "Subject: {} \n\n{}".format(subject, body)
 
     status = server.sendmail(
-        'bhargav999reddy@gmail.com',
+        '********', #Replace with senders mail id.
         to,
         msg
     )
@@ -37,5 +37,5 @@ def mail_task(mail_data):
     time_left = hours_left * 60 + minutes_left - present_time
     host_body = "name: {}\nemail : {}\nphone : {}\nCheckin time : {}\nCheckout time : {}".format(mail_data["visitor_name"],mail_data["visitor_mail_id"],mail_data["visitor_phone"],mail_data["check_in_time"],mail_data["check_out_time"])
     visitor_body = "name: {}\nemail : {}\nphone : {}\nCheckin time : {}\nCheckout time : {}\nHost : {}\nAddress visited : {}".format(mail_data["visitor_name"],mail_data["visitor_mail_id"],mail_data["visitor_phone"],mail_data["check_in_time"],mail_data["check_out_time"], mail_data["host_name"],mail_data["host_addr"])
-    send_email.delay('New Visitor',host_body,'bhargav999reddy@gmail.com',0)
+    send_email.delay('New Visitor',host_body,'*****',0) # ** replace with senders mail id
     send_email.delay('Thank you for visiting',visitor_body,mail_data["visitor_mail_id"],abs(time_left))
